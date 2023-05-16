@@ -5,6 +5,8 @@
 4. Visuales
 5. Otros
 */
+
+/*Estilos generales*/
 :root {
     /*Colores*/
     --bitcon-orange: #F7931A;
@@ -27,4 +29,78 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+}
+
+/*Header*/
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 32.0rem;
+    height: 33.4rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header__logo {
+    width: 15.0rem;
+    height: 2.4rem;
+    margin-top: 6.0rem;
+    /*align-self: center;*/
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90.0rem;
+    height: 21.8rem;
+    margin-top: 4.0rem;
+    /*align-self: center;
+    text-align: center;*/
+}
+
+.header__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__text {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 50.0rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header__button {
+    position: absolute;
+    left: calc(50% - 11.4rem);
+    top: 27.0rem;
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button-icon {
+    display: inline-block;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1.0rem;
+    background-image: url('./assets/icons/arrow-down.svg');
 }
