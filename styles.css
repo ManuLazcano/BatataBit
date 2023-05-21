@@ -157,12 +157,21 @@ html {
 }
 
 /*Currency*/
+.currency {
+    display: flex;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
 .currency__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
     min-width: 23.5rem;
     max-width: 50.0rem;
     height: 36.0rem;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .currency__table--title {
@@ -174,11 +183,13 @@ html {
 }
 
 .currency__table-container { 
+    /*Hago que sea position relative, para poder posicionar el icono de la flecha (que tendra position absolute)que cambia a comisiones*/
+    position: relative;
     width: 90%;
     min-width: 23.0rem;
     max-width: 30.0rem;
     height: 25.0rem;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .currency__table {
@@ -253,6 +264,18 @@ html {
 .currency__table--currency-price::before {
     content: "$";
     margin-right: 0.4rem;
+}
+
+.currency__icon-arrow-right {
+    position: absolute;
+    bottom: 8.3rem;
+    right: -3.0rem;
+    width: 1.0rem;
+    height: 1.0rem;
+    background-image: url('./assets/icons/Vector.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .currency__update-info {
