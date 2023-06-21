@@ -108,6 +108,7 @@ html {
     height: 0.8rem;
     margin-left: 1.0rem;
     background-image: url('./assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
 }
 
 /*Main*/
@@ -126,14 +127,6 @@ html {
     text-align: center;
 }
 
-.main-section-container__title-container {
-    width: 90%;
-    /*288rem porque es el 90% de 320(que es minimo tamaño de pantalla en los celulares)*/
-    min-width: 28.8rem; 
-    max-width: 90.0rem;
-    margin: 0 auto;
-}
-
 .main-section-container__background-Img {
     width: 20.0rem;
     height: 20.0rem;
@@ -144,6 +137,15 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.main-section-container__title-container {
+    width: 90%;
+    /*288rem porque es el 90% de 320(que es minimo tamaño de pantalla en los celulares)*/
+    min-width: 28.8rem; 
+    max-width: 90.0rem;
+    margin: 0 auto;
+}
+
 
 .main-section-container__title {
     margin-bottom: 2.4rem;
