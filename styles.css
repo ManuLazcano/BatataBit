@@ -354,3 +354,63 @@ html {
     font-weight: 700;
     margin-right: 0.4rem;
 }
+
+/*Benefits*/
+.benefits {
+    width: 100%;
+    height: auto;
+    padding: 2.4rem 0;
+    background-color: var(--warm-black);
+}
+
+
+.benefits__title-container {
+    position: relative;
+    width: 90%;
+    max-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    padding-top: 2.4rem;
+    text-align: center;
+}
+
+.benefits__logo {
+    position: absolute;
+    top: -38px;
+    left: 123px;
+}
+
+.benefits__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.benefits__title--card {
+    margin-bottom: 1.2rem;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.benefits__text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--grey);
+}
+
+.benefits__card-container {
+    width: 90%;
+    max-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem;
+    background-color: var(--black);
+}
+
+.benefits__icon {
+    margin-bottom: 0.8rem;
+}
