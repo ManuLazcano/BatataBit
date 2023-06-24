@@ -357,7 +357,9 @@ html {
 
 /*Benefits*/
 .benefits {
+    position: relative;
     width: 100%;
+    min-width: 32.0rem;
     height: auto;
     padding: 2.4rem 0;
     background-color: var(--warm-black);
@@ -365,9 +367,9 @@ html {
 
 
 .benefits__title-container {
-    position: relative;
     width: 90%;
-    max-width: 28.8rem;
+    max-width: 40.0rem;
+    min-width: 28.8rem;
     height: auto;
     margin: 0 auto;
     margin-bottom: 2.5rem;
@@ -377,14 +379,20 @@ html {
 
 .benefits__logo {
     position: absolute;
-    top: -38px;
-    left: 123px;
+    top: -12px;
+    left: calc(50% - 20px);
+    /*
+    Lo centramos con ***left: calc(50% - 20px)***, donde 50% lo coloca en la mitad, pero no lo centra. 
+    Esto se debe a que el logo tiene dimensiones (40px para ser precisos), y como queremos que esté 
+    justo en la mitad, le quitamos la mitad de su ancho (20px), posicionándolo justo en el centro.
+    */
 }
 
 .benefits__title {
     margin-bottom: 2.4rem;
     font-size: 2.4rem;
     font-weight: bold;
+    line-height: 2.6rem;
     color: var(--just-white);
 }
 
@@ -398,17 +406,20 @@ html {
 .benefits__text {
     font-size: 1.4rem;
     font-weight: bold;
+    line-height: 1.8rem;
     color: var(--grey);
 }
 
 .benefits__card-container {
     width: 90%;
-    max-width: 28.8rem;
+    max-width: 40.0rem;
+    min-width: 28.8rem;
     height: auto;
     margin: 0 auto;
     margin-bottom: 1.6rem;
     padding: 1.6rem;
     background-color: var(--black);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 }
 
 .benefits__icon {
