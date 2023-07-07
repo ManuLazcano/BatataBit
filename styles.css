@@ -425,3 +425,22 @@ html {
 .benefits__icon {
     margin-bottom: 0.8rem;
 }
+
+/*Background img*/
+.background-img {
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    background-image: url('./assets/imgs/bitcoin-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img__title {
+    padding-top: 6.5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
