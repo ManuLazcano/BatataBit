@@ -429,7 +429,7 @@ html {
 /*Background img*/
 .background-img {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     background-image: url('./assets/imgs/bitcoin-background.png');
     background-position: center;
@@ -443,4 +443,111 @@ html {
     font-weight: 700;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+/*Plans section*/
+.plans-section {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 6.5rem 2.0rem;
+    text-align: center;
+}
+
+.plans-section__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.plans-section__text {
+    margin-bottom: 5.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+/*plan-card*/
+.plan-card {
+    position: relative;
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.plan-card__recommended {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -15px;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--just-white);
+    border-radius: 8px;
+    background-color: var(--bitcon-orange);
+}
+
+.plan-card__payment-time {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.plan-card__price {
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: -4.16px;
+}
+
+.plan-card__currency::before {
+    content: "$";
+    font-size: 1.4rem;
+    letter-spacing: normal;
+}
+
+.plan-card__currency--primary {
+    position: relative;
+    top: -30px;
+}
+
+.plan-card__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.plan-card__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 48px;
+    margin: 25px 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    border-radius: 4px;
+    border: 2px solid var(--bitcon-orange);
+    background-color: var(--off-white);
+}
+
+.plan-card__icon-arrow {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    background-image: url('./assets/icons/icon-arrow-right-planCard.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
