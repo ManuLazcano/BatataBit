@@ -448,10 +448,14 @@ html {
 /*Plans section*/
 .plans-section {
     width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 6.5rem 2.0rem;
+    min-width: 320px;
+    padding: 60px 0;
     text-align: center;
+}
+
+.plans-section__text-container {
+    width: 100%;
+    padding: 0 15px;
 }
 
 .plans-section__title {
@@ -469,33 +473,45 @@ html {
 
 /*plan-card*/
 .plan-card {
-    position: relative;
-    width: 80%;
-    max-width: 320px;
+    width: 100%;
+    min-width: 320px;
     height: auto;
+}
+
+.plan-card__container {
+    position: relative;
+    width: 190px;
+    height: 247px;
     margin: 0 auto;
+    background-color: var(--just-white);
     box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
     border-radius: 8px;
 }
 
-.plan-card__recommended {
+.plan-card__recommended-container {
     position: absolute;
     left: calc(50% - 50px);
     top: -15px;
     width: 100px;
     height: 30px;
     padding: 8px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--just-white);
     border-radius: 8px;
     background-color: var(--bitcon-orange);
 }
 
+.plan-card__recommended {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--just-white);
+}
+
+.plan-card__price-container {
+    width: 100%;
+    padding: 35px 15px 0 15px;
+}
+
 .plan-card__payment-time {
     display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 10px;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--black);
@@ -511,16 +527,19 @@ html {
 
 .plan-card__currency::before {
     content: "$";
-    font-size: 1.4rem;
-    letter-spacing: normal;
 }
 
-.plan-card__currency--primary {
+.plan-card__price--icon {
     position: relative;
     top: -30px;
+    left: -3px;
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    color: #757575;
 }
 
 .plan-card__text {
+    margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 500;
     color: #757575;
@@ -530,9 +549,9 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 151px;
     height: 48px;
-    margin: 25px 20px;
+    margin-top: 20px;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--warm-black);
@@ -541,7 +560,7 @@ html {
     background-color: var(--off-white);
 }
 
-.plan-card__icon-arrow {
+.plan-card__icon-arrow-button {
     display: inline-block;
     width: 24px;
     height: 24px;
