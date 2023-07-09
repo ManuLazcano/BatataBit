@@ -499,6 +499,14 @@ html {
     background-color: var(--bitcon-orange);
 }
 
+.plan-card__recommended-container--blue {
+    background-color: var(--secondary-blue);
+}
+
+.plan-card__recommended-container--black {
+    background-color: var(--warm-black);
+}
+
 .plan-card__recommended {
     font-size: 1.2rem;
     font-weight: 700;
@@ -560,6 +568,14 @@ html {
     background-color: var(--off-white);
 }
 
+.plan-card__button--blue {
+    border: 2px solid var(--secondary-blue);
+}
+
+.plan-card__button--black {
+    border: 2px solid var(--warm-black);
+}
+
 .plan-card__icon-arrow-button {
     display: inline-block;
     width: 24px;
@@ -569,4 +585,12 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.plan-card__icon-arrow-button--blue {
+    background-image: url('./assets/icons/icon-arrow-right-planCard-blue.svg');
+}
+
+.plan-card__icon-arrow-button--black {
+    background-image: url('./assets/icons/icon-arrow-right-planCard-black.svg');
 }
