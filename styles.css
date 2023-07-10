@@ -5,6 +5,8 @@
 4. Visuales
 5. Otros
 */
+
+/*Estilos generales*/
 :root {
     /*Colores*/
     --bitcon-orange: #F7931A;
@@ -27,4 +29,613 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+}
+
+.inactive {
+    display: none;
+}
+
+/*Header*/
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 32.0rem;
+    height: 33.4rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header__logo {
+    width: 15.0rem;
+    height: 2.4rem;
+    margin-top: 6.0rem;
+    /*align-self: center;*/
+}
+
+.header__title-container {
+    width: 90%;
+    /*288rem porque es el 90% de 320(que es minimo tamaño de pantalla en los celulares)*/
+    min-width: 28.8rem;
+    max-width: 90.0rem;
+    height: 21.8rem;
+    margin-top: 4.0rem;
+    /*align-self: center;
+    text-align: center;*/
+}
+
+.header__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__text {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 50.0rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header__button {
+    position: absolute;
+    left: calc(50% - 11.4rem);
+    top: 27.0rem;
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button-icon {
+    display: inline-block;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1.0rem;
+    background-image: url('./assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+}
+
+/*Main*/
+.main {
+    width: 100%;
+    min-width: 32.0rem;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-section-container {
+    width: 100%;
+    height: auto;
+    padding-top: 8.0rem;
+    padding-bottom: 3.0rem;
+    text-align: center;
+}
+
+.main-section-container__background-Img {
+    width: 20.0rem;
+    height: 20.0rem;
+    margin: 0 auto;
+    margin-bottom: 5.0rem;
+    background-image: url('./assets/imgs/bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-section-container__title-container {
+    width: 90%;
+    /*288rem porque es el 90% de 320(que es minimo tamaño de pantalla en los celulares)*/
+    min-width: 28.8rem; 
+    max-width: 90.0rem;
+    margin: 0 auto;
+}
+
+
+.main-section-container__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.main-section-container__text {
+    margin-bottom: 4.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+/*Currency and Commissions*/
+.currency,
+.commissions {
+    display: flex;
+    justify-content: center;
+}
+
+.currency--arrow-right {
+    margin-right: 1.5rem;
+}
+
+.commissions--arrow-left {
+    margin-left: 1.5rem;
+}
+
+.currency__container,
+.commissions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    min-width: 23.5rem;
+    max-width: 50.0rem;
+    height: 36.0rem;
+    /*margin: 0 auto;*/
+}
+
+.currency__table-title,
+.commissions__table-title {
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;    
+}
+
+.currency__table--title-orange {
+    color: var(--bitcon-orange);
+}
+
+.commissions__table--title-blue {
+    color: var(--secondary-blue);
+}
+
+.currency__table-container,
+.commissions__table-container { 
+    /*Hago que sea position relative, para poder posicionar el icono de la flecha (que tendra position absolute)que cambia a comisiones/moneda*/
+    position: relative;
+    width: 90%;
+    min-width: 23.0rem;
+    max-width: 30.0rem;
+    height: 25.0rem;
+    /*margin: 0 auto;*/
+}
+
+.currency__table,
+.commissions__table {
+    width: 100%;
+    height: 100%;    
+}
+
+.currency__table--currency-name,
+.commissions__table--commissions-name {
+    width: 50%;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.02em;
+    color: #B5B0AC;
+    /*Se pone el fondo de color directamente a las etiquetas tr, para después poder darle un borde redondeado*/
+    background-color: var(--just-white);
+}
+
+.currency__table--currency-price,
+.commissions__table--commissions-price {
+    width: 50%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #757575;
+    background-color: var(--just-white);
+}
+
+.currency__icon-down {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.5rem;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency__icon-up {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.5rem;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency__table--top-left,
+.commissions__table--top-left {
+    border-radius: 1.5rem 0 0 0;
+}
+
+.currency__table--top-right,
+.commissions__table--top-right {
+    border-radius: 0 1.5rem 0 0;
+}
+
+.currency__table--bottom-left,
+.commissions__table--bottom-left {
+    border-radius: 0 0 0 1.5rem;
+}
+
+.currency__table--bottom-right,
+.commissions__table--bottom-right {
+    border-radius: 0 0 1.5rem 0;
+}
+
+.currency__table--currency-price::before,
+.commissions__table--commissions-price::before {
+    content: "$";
+    margin-right: 0.4rem;
+}
+
+.currency__icon-arrow,
+.commissions__icon-arrow {
+    position: absolute;
+    /*bottom: 8.3rem;
+    right: -3.0rem;*/
+    width: 1.0rem;
+    height: 1.0rem;
+    /*background-image: url('./assets/icons/Vector.svg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency__icon-arrow--right {
+    bottom: 8.3rem;
+    right: -3.0rem;
+    background-image: url('./assets/icons/Vector.svg');
+}
+
+.commissions__icon-arrow--left {
+    bottom: 8.3rem;
+    left: -3.0rem;
+    background-image: url('./assets/icons/Vector.svg');
+    transform: rotate(180deg);
+}
+
+.currency__update-info,
+.commissions__update-info {
+    display: inline-block;
+    width: 17.3rem;
+    height: 3.1rem;
+    margin-top: 4.7rem;
+    padding: 0.8rem;
+    font-family: 'Inter';
+    font-style: normal;
+    /*font-weight: 700;*/
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--warm-black);
+    /*background-color: var(--soft-orange);*/
+    border-radius: 0.8rem;
+}
+
+.currency__update-info--soft-orange {
+    background-color: var(--soft-orange);
+}
+
+.commissions__update-info--soft-blue {
+    background-color: var(--soft-blue);
+}
+
+.currency__update-info--bold,
+.commissions__update-info--bold {
+    font-weight: 700;
+    margin-right: 0.4rem;
+}
+
+/*Benefits*/
+.benefits {
+    position: relative;
+    width: 100%;
+    min-width: 32.0rem;
+    height: auto;
+    padding: 2.4rem 0;
+    background-color: var(--warm-black);
+}
+
+
+.benefits__title-container {
+    width: 90%;
+    max-width: 40.0rem;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    padding-top: 2.4rem;
+    text-align: center;
+}
+
+.benefits__logo {
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 20px);
+    /*
+    Lo centramos con ***left: calc(50% - 20px)***, donde 50% lo coloca en la mitad, pero no lo centra. 
+    Esto se debe a que el logo tiene dimensiones (40px para ser precisos), y como queremos que esté 
+    justo en la mitad, le quitamos la mitad de su ancho (20px), posicionándolo justo en el centro.
+    */
+}
+
+.benefits__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.benefits__title--card {
+    margin-bottom: 1.2rem;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.benefits__text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.benefits__card-container {
+
+}
+
+.benefits__card {
+    width: 90%;
+    max-width: 40.0rem;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem;
+    background-color: var(--black);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.benefits__icon {
+    margin-bottom: 0.8rem;
+}
+
+/*Background img*/
+.background-img {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-image: url('./assets/imgs/bitcoin-background-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img__title {
+    padding-top: 6.5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+/*Plans section*/
+.plans-section {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.plans-section__text-container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.plans-section__title {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.plans-section__text {
+    margin-bottom: 5.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+/*plan-card*/
+.plan-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 316px;
+    min-width: 320px;
+    padding: 0 75px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plan-card__container {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 247px;
+    margin: 0 10px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.plan-card__recommended-container {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -15px;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--bitcon-orange);
+}
+
+.plan-card__recommended-container--blue {
+    background-color: var(--secondary-blue);
+}
+
+.plan-card__recommended-container--black {
+    background-color: var(--warm-black);
+}
+
+.plan-card__recommended {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--just-white);
+}
+
+.plan-card__price-container {
+    width: 100%;
+    padding: 35px 15px 0 15px;
+}
+
+.plan-card__payment-time {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.plan-card__price {
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: -4.16px;
+}
+
+.plan-card__currency::before {
+    content: "$";
+}
+
+.plan-card__price--icon {
+    position: relative;
+    top: -30px;
+    left: -3px;
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    color: #757575;
+}
+
+.plan-card__text {
+    height: 32px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.plan-card__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    min-width: 151px;
+    height: 48px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    border-radius: 4px;
+    border: 2px solid var(--bitcon-orange);
+    background-color: var(--off-white);
+}
+
+.plan-card__button--blue {
+    border: 2px solid var(--secondary-blue);
+}
+
+.plan-card__button--black {
+    border: 2px solid var(--warm-black);
+}
+
+.plan-card__icon-arrow-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    background-image: url('./assets/icons/icon-arrow-right-planCard.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plan-card__icon-arrow-button--blue {
+    background-image: url('./assets/icons/icon-arrow-right-planCard-blue.svg');
+}
+
+.plan-card__icon-arrow-button--black {
+    background-image: url('./assets/icons/icon-arrow-right-planCard-black.svg');
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcon-orange);
+}
+
+.footer__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.footer__item {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--just-white);
 }

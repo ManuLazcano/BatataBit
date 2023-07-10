@@ -1,0 +1,32 @@
+/*Currency and Commissions*/
+.main-section-container__info-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.inactive.commissions--arrow-left {
+    display: block;
+}
+
+.currency__icon-arrow,
+.commissions__icon-arrow {
+    display: none;
+}
+
+/*Benefits*/
+.benefits__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.benefits__card {
+    margin-bottom: 25px;
+}
+
+.background-img {
+    background-image: url('../assets/imgs/bitcoin-background-tablet.png');
+}
