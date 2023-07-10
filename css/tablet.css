@@ -6,7 +6,8 @@
     margin: 0 auto;
 }
 
-.inactive.commissions--arrow-left {
+.inactive.commissions--arrow-left,
+.inactive.currency--arrow-right {
     display: block;
 }
 
