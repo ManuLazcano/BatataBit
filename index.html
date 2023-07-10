@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header"> <!--Block-->
-        <img class="header__logo" src="./assets/imgs/logo.svg" alt="Logo">
+        <img class="header__logo" src="./assets/imgs/logo-header.svg" alt="Logo">
         <div class="header__title-container">
             <h1 class="header__title">La próxima revolución en el intercambio de criptomonedas</h1>
             <p class="header__text">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
@@ -84,7 +84,7 @@
         </section>
         <section class="benefits"> <!--Block-->
             <div class="benefits__title-container">
-                <img class="benefits__logo" src="./assets/imgs/logo-2.svg" alt="Logo de la batata">
+                <img class="benefits__logo" src="./assets/imgs/logo-benefits.svg" alt="Logo de la batata">
                 <h2 class="benefits__title">Creamos un producto sin comparación.</h2>
                 <p class="benefits__text">Confiable y diseñado para su uso diario.</p>
             </div>
@@ -114,7 +114,7 @@
         <section class="background-img"> <!--Block-->
             <h2 class="background-img__title">Conócelo hoy.</h2>
         </section>
-        <section class="plans-section"> <!--Block-->
+        <section id="plans" class="plans-section"> <!--Block-->
             <div class="plans-section__text-container">
                 <h2 class="plans-section__title">Escoge el plan que mejor se ajuste a ti.</h2>
                 <p class="plans-section__text">Cualquier plan te da acceso completo a nuestra plataforma</p>
@@ -131,7 +131,7 @@
                     </div>
                     <button class="plan-card__button">Escoger este <span class="plan-card__icon-arrow-button"></span></button>
                 </article>
-                <article id="plans" class="plan-card__container">
+                <article class="plan-card__container">
                     <div class="plan-card__recommended-container plan-card__recommended-container--blue">
                         <p class="plan-card__recommended">Básico</p>
                     </div>
@@ -156,7 +156,18 @@
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer"> <!--Block-->
+        <section class="footer__section">
+            <ul>
+                <li class="footer__item"><a class="footer__link" href="#">Linkedin</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Crunchbase</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <img src="./assets/imgs/logo-footer.svg" alt="Logo de BatataBit">
+        </section>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
